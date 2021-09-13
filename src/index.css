@@ -1,13 +1,285 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 7px #aaaaaa;
+}
+.left-header p{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: #ff8000;
+  border: 1px solid #ff8000;
+  padding: 10px;
+}
+.right-header{
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.right-header div{
+  padding: 10px 14px;
+  border-radius: 20px;
+}
+
+.right-header a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.right-header div:hover{
+   background-color: #ff8000;
+}
+
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+.login-form input{
+   margin: 10px 0;
+   padding: 10px;
+   width: 500px;
+   outline: none;
+}
+.login-form button{
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #0099e6;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.user {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.user h2{
+  text-align: center;
+  color: #737373;
+}
+.user .create-user{
+  margin-top: 30px;
+  margin-right: 40px;
+}
+.user .create-user a{
+   background-color: #ff8000;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+.users{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.user .MuiSvgIcon-root{
+  color:#0099e6;
+}
+.user .myuser{
+  border: 1px solid #ccc;
+  padding: 70px 140px;
+}
+.user .users a{
+  background-color: #0099e6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.myproduct{
+  border: 1px solid #ccc;
+  padding: 70px 140px;
+}
+.myproduct h2{
+  text-align: center;
+  color: #737373;
+}
+.myproduct a{
+  text-decoration: none;
+}
+.all-products{
+  display: flex;
+  margin-top: 20px;
+}
+.all-products a{
+  text-decoration: none;
+  color: #000;
+}
+.all-products .food-card{
+  margin-left: 20px;
+}
+.all-products .food-card img{
+  width: 300px;
+  height: 200px;
+}
+.food-card .price div{
+  color: #ff0000;
+}
+.food-card{
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.food-card p{
+  font-size: 1.2rem;
+}
+.rating .MuiSvgIcon-root{
+  color:#29a329;
+}
+.all-user {
+  margin-left: 30%;
+  margin-top: 20px;
+}
+
+.all-user table{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 7px #aaaaaa;
+}
+.all-user table td{
+  padding: 10px 200px;
+  font-size: 1.2rem;
+  color: #005ce6;
+}
+.all-user table th{
+  padding: 10px;
+}
+.all-user table tr:nth-child(odd){
+  background-color: #ebebe0;
+}
+.create-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.create-user input{
+   margin: 10px 0;
+   padding: 10px;
+   width: 500px;
+   outline: none;
+}
+.create-user button{
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #0099e6;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.delete-user{
+  background-color:#ff0000;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 40px;
+}
+.product-option{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.product-option .MuiSvgIcon-root{
+  color:#0099e6;
+}
+.product-option .pro{
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.product-option .pro a{
+   color: #fff;
+   background-color: #0099e6;
+   font-size: 1rem;
+   border-radius: 20px;
+   padding: 10px 20px;
+}
+.product-option .cre-pro a{
+  color: #fff;
+  background-color:#ff8000;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.create-product-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.create-product-list form input{
+  margin: 10px 0;
+   padding: 10px;
+   width: 500px;
+   outline: none;
+}
+.create-product-list button{
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  background-color:#ff8000;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.product-detail{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.product-detail img{
+  width: 450px;
+}
+.product-detail .price div{
+  color: #ff0000;
+  margin-top: 10px;
+}
+.product-detail .rating{
+  margin-top: 10px;
+}
+.product-one{
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0px 0px 7px #aaaaaa;
+}
+.product-one p{
+  font-size: 1.2rem;
+}
+.product-one button{
+  background-color: #ff8000;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
