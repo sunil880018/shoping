@@ -63,6 +63,7 @@
   border-radius: 20px;
   font-size: 1rem;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .user {
   display: flex;

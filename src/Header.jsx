@@ -8,6 +8,9 @@ function Header() {
                 <p>Shopping.com</p>
             </div>
             <div className="right-header">
+                 <div>
+                    <Link to="/home/">Home</Link>
+                </div>
                 <div className="active">
                     <Link to="/login/">Login</Link>
                 </div>
