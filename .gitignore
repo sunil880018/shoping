@@ -1,2 +1,3 @@
 /node_modules
 /myshop/node_modules
+.env
